@@ -35,9 +35,15 @@ describe "Artist" do
     describe "#add_song_by_name" do
       it "takes in an argument of a song name, creates a new song with it and associates the song and artist" do
         adele.add_song_by_name("Rolling in the Deep")
+<<<<<<< HEAD
 
         expect(adele.songs.last.name).to eq("Rolling in the Deep")
         expect(adele.songs.last.artist).to eq(adele)
+=======
+  binding.pry
+        expect(adele.songs.name).to eq("Rolling in the Deep")
+        expect(adele.songs.artist).to eq(adele)
+>>>>>>> b018118615f9eaf5817ba0f0b4c026a923a1e428
       end
     end
 
